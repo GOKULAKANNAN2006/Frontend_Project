@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="icon" href="img/12236606.png">
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <center>
+    <h1>STUDENT FORM</h1>
+    </center>
+<div class="container">
+    <table class="formTable">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+
+         <tr>
+            <td>Age</td>
+            <td><input type="number" id="age"></td>
+        </tr>
+
+         <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td>
+        </tr>
+
+         <tr>
+            <td>Course</td>
+            <td>
+                <select id="course">
+                <option>BCA</option>
+            <option>B.Sc IT</option>
+            <option>B.E CSE</option>
+            <option>B.E ECE</option>
+            <option>B.Com</option>
+            </select>
+            </td>
+
+        </tr>
+
+         <tr>
+            <td>E-Mail</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button onclick="savestd()" type="button" style="background-color: aquamarine;">SAVE</button></td>
+        </tr>
+    </table>
+    <br>
+     <table border="1" id="studentTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>AGE</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
