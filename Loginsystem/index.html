@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript session</title>
+    <style>
+       body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+
+   body .container{
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    text-align: center;
+   }
+   button{
+    padding: 10px;
+    cursor: pointer;
+   }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    
+    <h1>Login Page</h1>
+
+    <form>
+        <label for="uname">Enter Username:</label> <br>
+        <input type="text" name="uname" id="uname"> <br> <br>
+        <label for="">Enter Password:</label><br>
+        <input type="password" name="pass" id="pass"><br> <br>
+    </form>
+    <button id="btn" onclick="login()">Login</button>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
