@@ -51,8 +51,8 @@ buttons.forEach((button) => {
 });
 
 function logout() {
-  var but = document.getElementById("btn");
-  window.location.assign("index.html");
+  sessionStorage.removeItem("loggedIn");
+  window.location.replace("index.html");
 }
 
 document.addEventListener("keydown", function (event) {
